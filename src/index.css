@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-ivory text-espresso font-body antialiased;
+}
+
+::selection {
+  background-color: #C6992F;
+  color: #1C120B;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Visible keyboard focus */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #C6992F;
+  outline-offset: 3px;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Scrollbar accent */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #1C120B;
+}
+::-webkit-scrollbar-thumb {
+  background: #8F6C1F;
+  border-radius: 8px;
+}
