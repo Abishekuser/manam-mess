@@ -2,13 +2,13 @@ import { motion } from 'framer-motion'
 import { Clock3, MapPin } from 'lucide-react'
 
 const hours = [
-  { day: 'Monday', time: '7:30 AM – 3:30 PM' },
-  { day: 'Tuesday', time: '7:30 AM – 3:30 PM' },
-  { day: 'Wednesday', time: '7:30 AM – 3:30 PM' },
-  { day: 'Thursday', time: '7:30 AM – 3:30 PM' },
-  { day: 'Friday', time: '7:30 AM – 3:30 PM' },
-  { day: 'Saturday', time: '7:30 AM – 3:30 PM' },
-  { day: 'Sunday', time: '7:30 AM – 3:30 PM' },
+  { day: 'Monday', time: '12:00 PM – 4:00 PM' },
+  { day: 'Tuesday', time: '12:00 PM – 4:00 PM' },
+  { day: 'Wednesday', time: '12:00 PM – 4:00 PM' },
+  { day: 'Thursday', time: '9:00 AM – 4:00 PM' },
+  { day: 'Friday', time: '9:00 AM – 4:00 PM' },
+  { day: 'Saturday', time: '12:00 PM – 4:30 PM' },
+  { day: 'Sunday', time: '12:00 PM – 4:30 PM' },
 ]
 
 export default function MapAndHours() {
